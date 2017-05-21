@@ -1,0 +1,29 @@
+{% extends 'app/base.html' %}
+
+<!--HTML - head, Title variable -->
+{% block title %}Threads {% endblock %}
+
+{% block body %}
+
+    <!-- Tänne sivun html -->
+    <div class="container">
+        <br />
+        <div class="well">
+            <h1 align="center">Threads</h1>
+
+            <ul>
+                <!-- Iterates the database with for loop from the database -->
+                {% for thread in threads %}
+                    <li>
+                        <!-- Create a link for detailed view for each thread -->
+                        <a href="/all/{{ thread.id}}">{{ thread.topic }}</a>
+                    </li>
+
+                <!-- End for loop -->
+                {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+body {
+    background: black url("images/bg.jpg");
+}
+
+.navbar-brand {
+    color : white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Condiment', cursive;
+}
