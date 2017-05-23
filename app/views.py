@@ -33,3 +33,14 @@ def threads(request):
         return HttpResponse(template.render(context, request))
 
 #View a thread
+def detailed_view(request, thread_id):
+
+    threads = Thread.objects.all()
+    comments = Postings.objects.all()
+    template = loader.get_template('app/details.html')
+
+    context = {
+        'threads' : threads,
+        'comments' : comments,
+    }
+    return HttpResponse(template.render(context, request))
