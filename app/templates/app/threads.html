@@ -7,16 +7,32 @@
 
     <!-- Tänne sivun html -->
     <div class="container">
-        <br />
         <div class="well">
             <h1 align="center">Threads</h1>
+        </div>
+        <div class="cardlayout">
 
-            <ul>
+                <ul class="threadul">
                 <!-- Iterates the database with for loop from the database -->
                 {% for thread in threads %}
-                    <li>
-                        <!-- Create a link for detailed view for each thread -->
-                        <a href="/all/{{ thread.id}}">{{ thread.topic }}</a>
+                    <li class="threadclass">
+                        <div class="card" id="{{thread.id}}">
+                            <h3>{{thread.topic}}</h3>
+                            <a href="/threads/{{ thread.id}}">
+                                <img src="{{thread.imagelink}}" alt="{{thread.imagelink}}">
+                            </a>
+                            <!-- Create a link for detailed view for each thread -->
+                            <p>
+                                    {{thread.comment}}
+                            </p>
+                            <div class="author">
+                                    <p>
+                                        - {{thread.start_user}}<br />
+                                        {{thread.datetime.time}}
+                                    </p>
+                            </div>
+
+                        </div>
                     </li>
 
                 <!-- End for loop -->

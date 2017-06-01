@@ -8,3 +8,49 @@ body {
     font-size: 30px;
     font-family: 'Condiment', cursive;
 }
+.threadclass{
+    float:left;
+}
+
+.threadclass a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.threadul{
+    display: block;
+}
+
+.container{
+    width: 100%;
+    height : 100%;
+}
+
+.cardlayout{
+    display: block;
+    width : 100%;
+    height : 1000px;
+    padding-top: 10px;
+}
+
+.card{
+    background-color: white;
+    border-radius: 15px;
+    border: solid orange thin;
+    margin: 10px;
+    padding:30px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.card img {
+    margin : 10px;
+    width:250px;
+    height :250px;
+    border-radius: 15px;
+    border: solid thin black;
+}
+
+.author {
+    text-align: right;
+}

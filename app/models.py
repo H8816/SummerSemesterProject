@@ -22,7 +22,7 @@ class Category(models.Model):
 
 class Thread(models.Model):
     start_user = models.ForeignKey(User, on_delete=models.CASCADE)
-    imagelink = models.CharField(max_length=50)
+    imagelink = models.CharField(max_length=200)
     topic = models.CharField(max_length=30)
     comment = models.CharField(max_length=500)
     datetime = models.DateTimeField(max_length=50)
