@@ -20,6 +20,11 @@ urlpatterns = [
     url(r'^', include('app.urls')),
     url(r'^login/', include('app.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^threads/', include('app.urls'))
-
+    url(r'^threads/', include('app.urls')),
+    url(r'^music/', include('app.urls')),
+    url(r'^currency/', include('app.urls')),
+    url(r'^movies/', include('app.urls')),
+    url(r'^love/', include('app.urls')),
+    url(r'^education/', include('app.urls')),
+    url(r'^development/', include('app.urls'))
 ]

@@ -1,0 +1,25 @@
+{% extends 'app/base.html' %}
+
+<!--HTML - head, Title variable -->
+{% block title %}new Thread {% endblock %}
+
+{% block body %}
+
+    <!-- Tänne sivun html -->
+    <div class="container">
+        <div class="well">
+            <h1 align="center">New Thread</h1>
+
+        <div class="base">
+            <form>
+                <label>Topic</label><br />
+                <input type="text" value="Topic"><br />
+                <label>Image link</label><br />
+                <input type="text" value="link" /><br />
+                <button>Make a new posting!</button>
+            </form>
+        </div>
+        </div>
+    </div>
+
+{% endblock %}

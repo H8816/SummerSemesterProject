@@ -35,7 +35,7 @@ class Postings(models.Model):
     username = models.ForeignKey(User,on_delete=models.CASCADE)
     thread = models.ForeignKey(Thread, on_delete=models.CASCADE)
     post_data = models.CharField(max_length=500)
-    imagelink = models.CharField(max_length=50)
+    imagelink = models.CharField(max_length=200)
 
 
 

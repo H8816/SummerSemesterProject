@@ -21,6 +21,18 @@ def login(request):
         }
         return HttpResponse(template.render(context, request))
 
+
+
+
+#Register views
+def register(request):
+
+        template = loader.get_template('app/register.html')
+        context = {
+
+        }
+        return HttpResponse(template.render(context, request))
+
 # List all threads
 def threads(request):
 
@@ -44,3 +56,71 @@ def detailed_view(request, thread_id):
         'comments' : comments,
     }
     return HttpResponse(template.render(context, request))
+
+def music(request):
+
+    category = Category.objects.all()
+    threads = Thread.objects.all()
+    template = loader.get_template('app/music.html')
+    context = {
+        'threads' : threads,
+    }
+    return HttpResponse(template.render(context, request))
+
+def currency(request):
+
+    category = Category.objects.all()
+    threads = Thread.objects.all()
+    template = loader.get_template('app/currency.html')
+    context = {
+        'threads' : threads,
+    }
+    return HttpResponse(template.render(context, request))
+
+def movies(request):
+
+    category = Category.objects.all()
+    threads = Thread.objects.all()
+    template = loader.get_template('app/movies.html')
+    context = {
+        'threads' : threads,
+    }
+    return HttpResponse(template.render(context, request))
+
+def love(request):
+
+    category = Category.objects.all()
+    threads = Thread.objects.all()
+    template = loader.get_template('app/love.html')
+    context = {
+        'threads' : threads,
+    }
+    return HttpResponse(template.render(context, request))
+
+def education(request):
+
+    category = Category.objects.all()
+    threads = Thread.objects.all()
+    template = loader.get_template('app/education.html')
+    context = {
+        'threads' : threads,
+    }
+    return HttpResponse(template.render(context, request))
+
+def development(request):
+
+    category = Category.objects.all()
+    threads = Thread.objects.all()
+    template = loader.get_template('app/development.html')
+    context = {
+        'threads' : threads,
+    }
+    return HttpResponse(template.render(context, request))
+
+def newThread(request):
+
+        template = loader.get_template('app/newthread.html')
+        context = {
+
+        }
+        return HttpResponse(template.render(context, request))

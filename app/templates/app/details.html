@@ -1,13 +1,18 @@
 {% extends 'app/base.html' %}
 
 <!--HTML - head, Title variable -->
-{% block title %}Shoutboard {% endblock %}
+{% block title %}{Thread.topic} {% endblock %}
 
 {% block body %}
 
         <!-- Tänne sivun html -->
         <div>
-            <h1>{{Thread.topic}}</h1>            
+            <h1>{{Thread.topic}}</h1>
+            {%for%}
+            <div>
+                <p>{{Thread.comment}} </p>
+            </div>
+            {%endfor%}
         </div>
 
 

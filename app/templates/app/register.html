@@ -1,0 +1,17 @@
+{% extends 'app/base.html' %}
+
+<!--HTML - head, Title variable -->
+{% block title %}Register {% endblock %}
+
+{% block body %}
+
+    <!-- Tänne sivun html -->
+    <label>Username</label><br />
+    <input type="text" name="username" id="username"><br />
+    <label>Email</label><br />
+    <input type="text" name="email" id="email" /><br />
+    <label>Password</label><br />
+    <input type="password" name="password" id="password" /><br />
+    <button type="submit">Register</button>
+
+{% endblock %}
